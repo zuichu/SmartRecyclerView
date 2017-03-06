@@ -68,3 +68,18 @@ APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/bl
         android:layout_height="match_parent" />
 
 ```
+```
+ LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        recyclerview.setLayoutManager(linearLayoutManager);
+        recyclerview.setLoadingListener(this);
+        list = new ArrayList<String>();
+        mainAdapter = new MainAdapter(this, list);
+        recyclerview.setAdapter(mainAdapter);
+        mainAdapter.setOnItemClickListener(this);
+        mainAdapter.setOnItemLongClickListener(this);
+        ```
+        如果想自动刷新的话
+          ```
+         recyclerview.refresh();
+           ```

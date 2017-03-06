@@ -60,9 +60,11 @@ APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/bl
 基本用法：
 
 布局文件：
-` <me.zuichu.recyclerview.view.SmartRecyclerview
-   android:id="@+id/recyclerView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" />`
+```
 
+ <me.zuichu.recyclerview.view.SmartRecyclerview
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
+```

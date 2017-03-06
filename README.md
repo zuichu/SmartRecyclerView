@@ -32,4 +32,7 @@ APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/bl
 
 视频演示：
 
-<iframe height=498 width=510 src="https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194506.mp4">
+<video id="video" controls="" preload="none" poster="http://media.w3.org/2010/05/sintel/poster.png">
+      <source id="mp4" src="https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194506.mp4" type="video/mp4">
+      <p>视频演示.</p>
+    </video>

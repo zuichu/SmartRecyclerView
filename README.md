@@ -11,4 +11,4 @@ SmartRecyclerView下拉刷新，上拉加载更多库
 Committed and Share By Tandong.
 https://github.com/jaychou2012/SmartRecyclerView
 
-APKDemo下载体验：下载APK(https://github.com/zuichu/SmartRecyclerView/blob/master/app-debug.apk) 
+APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/blob/master/app-debug.apk) 

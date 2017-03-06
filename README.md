@@ -16,36 +16,44 @@ APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/bl
 效果截图：
 
 <center>
-<img src="https://github.com/zuichutech/Resource/blob/master/Screenshot_20170306-194034.png" width="50%" height="50%"/>
+<img src="https://github.com/zuichutech/Resource/blob/master/Screenshot_20170306-194034.png" width="40%" height="40%"/>
 功能首页
 </center>
 
 
 <center>
-<img src="https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194209.png" width="50%" height="50%"/>
+<img src="https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194209.png" width="40%" height="40%"/>
 下拉刷新
 </center>
 
 
 <center>
-<img src="https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194244.png" width="50%" height="50%"/>
+<img src="https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194244.png" width="40%" height="40%"/>
 正在加载
 </center>
 
 <center>
-<img src="https://github.com/zuichutech/Resource/blob/master/Screenshot_20170306-194112.png" width="50%" height="50%"/>
+<img src="https://github.com/zuichutech/Resource/blob/master/Screenshot_20170306-194112.png" width="40%" height="40%"/>
 没有更多数据
 </center>
 
+<center>
+<img src="https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194319.png" width="40%" height="40%"/>
+有Header
+</center>
 
 
-![有Header](https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194319.png)  
+<center>
+<img src="https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194331.png" width="40%" height="40%"/>
+空数据
+</center>
 
-![空数据](https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194331.png)  
+<center>
+<img src="https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194350.png" width="40%" height="40%"/>
+多种布局
+</center>
 
-![多种布局](https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194350.png)  
 
-![多种布局](https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194350.png) 
 
 视频演示：
 

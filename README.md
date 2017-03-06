@@ -14,7 +14,8 @@ https://github.com/jaychou2012/SmartRecyclerView
 APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/blob/master/app-debug.apk) 
 
 效果截图：
-![功能首页](https://github.com/zuichutech/Resource/blob/master/Screenshot_20170306-194034.png =100x100)  
+![功能首页]<img src="https://github.com/zuichutech/Resource/blob/master/Screenshot_20170306-194034.png" width="50%" height="50%" />
+
 
 ![下拉刷新](https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194209.png)  
 

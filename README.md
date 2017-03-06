@@ -29,3 +29,7 @@ APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/bl
 ![多种布局](https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194350.png)  
 
 ![多种布局](https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194350.png) 
+
+视频演示：
+
+<iframe height=498 width=510 src="https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194506.mp4">

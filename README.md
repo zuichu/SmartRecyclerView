@@ -57,8 +57,10 @@ APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/bl
 
 [视频演示](https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194506.mp4)  
 
-基本用法：布局文件：
-<pre><code><?xml version="1.0" encoding="utf-8"?>
+基本用法：
+
+布局文件：
+`<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -70,5 +72,5 @@ APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/bl
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-</RelativeLayout>
-</code></pre>
+</RelativeLayout>`
+

@@ -21,11 +21,23 @@ APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/bl
 </center>
 
 
-![下拉刷新](https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194209.png)  
+<center>
+<img src="https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194209.png" width="50%" height="50%"/>
+下拉刷新
+</center>
 
-![正在加载](https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194244.png)  
 
-![没有更多数据](https://github.com/zuichutech/Resource/blob/master/Screenshot_20170306-194112.png)  
+<center>
+<img src="https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194244.png" width="50%" height="50%"/>
+正在加载
+</center>
+
+<center>
+<img src="https://github.com/zuichutech/Resource/blob/master/Screenshot_20170306-194112.png" width="50%" height="50%"/>
+没有更多数据
+</center>
+
+
 
 ![有Header](https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194319.png)  
 

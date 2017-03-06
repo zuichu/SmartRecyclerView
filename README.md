@@ -69,7 +69,7 @@ APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/bl
 
 ```
 ```
- LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerview.setLayoutManager(linearLayoutManager);
         recyclerview.setLoadingListener(this);
@@ -78,8 +78,8 @@ APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/bl
         recyclerview.setAdapter(mainAdapter);
         mainAdapter.setOnItemClickListener(this);
         mainAdapter.setOnItemLongClickListener(this);
-        ```
-        如果想自动刷新的话
-          ```
+```
+如果想自动刷新的话
+```
          recyclerview.refresh();
-           ```
+ ```

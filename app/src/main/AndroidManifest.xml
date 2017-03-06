@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.zuichu.smartrecyclerviewdemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="me.zuichu.smartrecyclerviewdemo.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="me.zuichu.smartrecyclerviewdemo.ListActivity" />
+        <activity android:name="me.zuichu.smartrecyclerviewdemo.MultiListActivity"/>
+        <activity android:name="me.zuichu.smartrecyclerviewdemo.GridActivity"/>
+        <activity android:name="me.zuichu.smartrecyclerviewdemo.MultiGridActivity"/>
+        <activity android:name="me.zuichu.smartrecyclerviewdemo.GridMultiListActivity"/>
+        <activity android:name="me.zuichu.smartrecyclerviewdemo.EmptyActivity"/>
+        <activity android:name="me.zuichu.smartrecyclerviewdemo.HeaderListActivity"/>
+    </application>
+
+</manifest>

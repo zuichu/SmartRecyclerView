@@ -83,3 +83,133 @@ APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/bl
 ```
          recyclerview.refresh();
  ```
+监听刷新，可以实现接口
+
+```
+        implements SmartRecyclerview.LoadingListener
+ ```
+ 然后实现重写2个方法
+ ```
+          @Override
+    public void onRefresh() {
+      
+    }
+
+    @Override
+    public void onLoadMore() {
+       
+    }
+ ```
+ 刷新完成，要使用
+  ```
+    recyclerview.refreshComplete();
+ ```
+  加载更多完成，要使用
+  ```
+    recyclerview.loadMoreComplete();
+ ```
+  没有更多数据了，要使用
+  ```
+     recyclerview.setNoMore(true);
+ ```
+ 可以自己设置更改刷新和加载更多的样式
+ ```
+      recyclerview.setRefreshProgressStyle(ProgressStyle.BallBeat);
+      recyclerview.setLoadingMoreProgressStyle(ProgressStyle.BallClipRotate);
+ ```
+  可以自己设置更改刷新的箭头，不设置的话为默认
+  ```
+       recyclerview.setArrowImageView(R.mipmap.ic_pulltorefresh_arrow);
+ ```
+ Item点击和长按事件使用
+  ```
+       implements BaseSmartAdapter.OnRecyclerViewItemClickListener, BaseSmartAdapter.OnRecyclerViewItemLongClickListener
+       ...
+        @Override
+    public void onItemClick(View view, int position) {
+        
+    }
+
+    @Override
+    public void onItemLongClick(View view, int position) {
+       
+    }
+ ```
+ 当然，RecyclerView的Adapter写起来很麻烦，并且默认没有点击和长按事件，所以，SmartRecyclerView写好了BaseSmartAdapter和多种布局的BaseMultiSmartAdapter。只需要继承实现就可以了。例如
+ ```
+   public class MainAdapter extends BaseSmartAdapter<String> {
+
+    public MainAdapter(Context context, List<String> lists) {
+        super(context, me.zuichu.smartrecyclerviewdemo.R.layout.item_main, lists);
+    }
+
+    @Override
+    public void bindData(SmarViewHolder holder, String s) {
+        holder.setText(me.zuichu.smartrecyclerviewdemo.R.id.tv_text, s);
+    }
+}
+ ```
+ 多种布局的话，用BaseMultiSmartAdapter
+ 
+ ```
+  public class MultiAdapter extends BaseMultiSmartAdapter<MultiItem> {
+
+    public MultiAdapter(Context context, List<MultiItem> data) {
+        super(context, data);
+        addItemType(0, R.layout.item_multi1);
+        addItemType(1, R.layout.item_multi2);
+    }
+
+    @Override
+    protected void bindData(SmarViewHolder smarViewHolder, MultiItem item) {
+        switch (item.getItemType()) {
+            case 0:
+                smarViewHolder.setText(R.id.tv_text1, "布局一："+item.getName());
+                break;
+            case 1:
+                smarViewHolder.setText(R.id.tv_text2, "布局二："+item.getName());
+                break;
+        }
+    }
+}
+ ```
+ 多种布局的Item实体类要继承SmartMultiEntity
+```
+ public class MultiItem extends SmartMultiEntity {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+ ``` 
+ 如果你用了GridLayoutManager,又要实现不规则的布局Adapter的话，可以在Adapter里这样写，重写Adapter的onAttachedToRecyclerView方法，然后按照需求判断就可以了
+ ```
+ @Override
+    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+        super.onAttachedToRecyclerView(recyclerView);
+        RecyclerView.LayoutManager manager = recyclerView.getLayoutManager();
+        if (manager instanceof GridLayoutManager) {
+            final GridLayoutManager gridManager = ((GridLayoutManager) manager);
+            gridManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+                @Override
+                public int getSpanSize(int position) {
+                    int position2 = position;
+                    if (position2 >= getLists().size()) {
+                        position2 = getLists().size() - 1;
+                    }
+                    if (getLists().size() > 0) {
+                        int type = getLists().get(position2).getItemType();
+                        return (type == 0) ?
+                                gridManager.getSpanCount() : 1;
+                    }
+                    return gridManager.getSpanCount();
+                }
+            });
+        }
+    }
+ ``` 

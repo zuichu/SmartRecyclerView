@@ -8,7 +8,7 @@ SmartRecyclerView下拉刷新，上拉加载更多库
 [署名-相同方式共享  4.0协议](https://creativecommons.org/licenses/by-sa/4.0/)  
 
 
-Committed and Share By Tandong.
+Committed and Share By Tandong（谭东）.
 https://github.com/jaychou2012/SmartRecyclerView
 
 APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/blob/master/app-debug.apk) 
@@ -90,7 +90,7 @@ APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/bl
  ```
  然后实现重写2个方法
  ```
-          @Override
+    @Override
     public void onRefresh() {
       
     }
@@ -117,11 +117,15 @@ APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/bl
       recyclerview.setRefreshProgressStyle(ProgressStyle.BallBeat);
       recyclerview.setLoadingMoreProgressStyle(ProgressStyle.BallClipRotate);
  ```
+ 
   可以自己设置更改刷新的箭头，不设置的话为默认
+  
   ```
        recyclerview.setArrowImageView(R.mipmap.ic_pulltorefresh_arrow);
  ```
+ 
  Item点击和长按事件使用
+ 
   ```
        implements BaseSmartAdapter.OnRecyclerViewItemClickListener, BaseSmartAdapter.OnRecyclerViewItemLongClickListener
        ...
@@ -213,3 +217,11 @@ APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/bl
         }
     }
  ``` 
+SmarRecyclerView轻松帮你实现了下拉刷新，上拉加载更多的逻辑。并且帮你做了很多Adapter里做的事情，简化你的操作。只需继承BaseSmartAdapter或BaseMultiSmartAdapter，实现里面的bindData方法即可，无需自己还要复杂的绑定Item布局，直接帮你自动绑定和加载。赋值的话可以这样用
+ ```
+@Override
+    public void bindData(SmarViewHolder holder, String s) {
+        holder.setText(me.zuichu.smartrecyclerviewdemo.R.id.tv_text, s);
+    }
+ ``` 
+ 

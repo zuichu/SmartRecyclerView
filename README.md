@@ -13,6 +13,24 @@ https://github.com/jaychou2012/SmartRecyclerView
 
 APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/blob/master/app-debug.apk) 
 
+##Gradle Dependency
+Add this in your root ```build.gradle``` file (not your module ```build.gradle``` file):
+
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+Then, add the library to your module ```build.gradle```
+```
+dependencies {
+	        compile 'com.github.zuichu:SmartRecyclerView:1.01'
+	}
+```
+
 效果截图：
 
 <center>

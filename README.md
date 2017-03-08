@@ -126,9 +126,9 @@ APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/bl
  Item点击和长按事件使用
  ```
       implements BaseSmartAdapter.OnRecyclerViewItemClickListener, BaseSmartAdapter.OnRecyclerViewItemLongClickListener
- ```
- 实现方法
-  ```
+      
+      ...
+      
     @Override
     public void onItemClick(View view, int position) {
         
@@ -138,6 +138,7 @@ APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/bl
     public void onItemLongClick(View view, int position) {
     
     }
+      
  ```
  
  当然，RecyclerView的Adapter写起来很麻烦，并且默认没有点击和长按事件，所以，SmartRecyclerView写好了BaseSmartAdapter和多种布局的BaseMultiSmartAdapter。只需要继承实现就可以了。例如

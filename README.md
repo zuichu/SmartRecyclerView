@@ -246,3 +246,7 @@ SmarRecyclerView轻松帮你实现了下拉刷新，上拉加载更多的逻辑�
     }
  ``` 
  
+##License
+ ```
+This work is licensed under a Creative Commons Attribution 4.0 International License. Feel free to contribute via Pull Requests, or discuss ideas in Issues. Also feel free to use these ideas in making the Next Big Thing.
+ ``` 

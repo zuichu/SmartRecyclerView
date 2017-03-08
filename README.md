@@ -120,12 +120,12 @@ APKDemo下载体验：[下载APK](https://github.com/zuichu/SmartRecyclerView/bl
  
   可以自己设置更改刷新的箭头，不设置的话为默认
   ```
-recyclerview.setArrowImageView(R.mipmap.ic_pulltorefresh_arrow);
+      recyclerview.setArrowImageView(R.mipmap.ic_pulltorefresh_arrow);
   
 ```
  Item点击和长按事件使用
  ```
-  implements BaseSmartAdapter.OnRecyclerViewItemClickListener, BaseSmartAdapter.OnRecyclerViewItemLongClickListener
+      implements BaseSmartAdapter.OnRecyclerViewItemClickListener, BaseSmartAdapter.OnRecyclerViewItemLongClickListener
  ```
  实现方法
   ```
@@ -139,7 +139,9 @@ recyclerview.setArrowImageView(R.mipmap.ic_pulltorefresh_arrow);
     
     }
  ```
+ 
  当然，RecyclerView的Adapter写起来很麻烦，并且默认没有点击和长按事件，所以，SmartRecyclerView写好了BaseSmartAdapter和多种布局的BaseMultiSmartAdapter。只需要继承实现就可以了。例如
+ 
  ```
    public class MainAdapter extends BaseSmartAdapter<String> {
 
@@ -151,7 +153,7 @@ recyclerview.setArrowImageView(R.mipmap.ic_pulltorefresh_arrow);
     public void bindData(SmarViewHolder holder, String s) {
         holder.setText(me.zuichu.smartrecyclerviewdemo.R.id.tv_text, s);
     }
-}
+  }
  ```
  多种布局的话，用BaseMultiSmartAdapter
  

@@ -31,7 +31,7 @@ dependencies {
 	}
 ```
 
-效果截图：
+##效果截图：
 
 <center>
 <img src="https://github.com/zuichutech/Resource/blob/master/Screenshot_20170306-194034.png" width="40%" height="40%"/>
@@ -75,9 +75,9 @@ dependencies {
 
 [视频演示](https://github.com/zuichutech/Resource/blob/master/device-2017-03-06-194506.mp4)  
 
-基本用法：
+##基本用法：
 
-布局文件：
+布局文件
 ```
 
  <me.zuichu.recyclerview.view.SmartRecyclerview
